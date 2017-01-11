@@ -1,13 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 19
     buildToolsVersion "23.0.3"
-
     defaultConfig {
         applicationId "com.cyrilmottier.android.gdcatalog"
-        minSdkVersion 4
-        targetSdkVersion 4
+        minSdkVersion 9
+        targetSdkVersion 21
     }
 
     buildTypes {
@@ -16,4 +15,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+}
+
+dependencies {
+    compile project(':qbaselib')
+
 }

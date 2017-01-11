@@ -1,1 +1,5 @@
-include ':app'
+include ':app', ':mbasepagerlib', ':mftplib', ':muilib', ':qbaselib'
+project(':mbasepagerlib').projectDir = new File('backup/mbasepagerlib')
+project(':mftplib').projectDir = new File('backup/mftplib')
+project(':muilib').projectDir = new File('backup/muilib')
+project(':qbaselib').projectDir = new File('backup/qbaselib')

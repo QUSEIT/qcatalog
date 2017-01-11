@@ -15,16 +15,17 @@
  */
 package com.cyrilmottier.android.gdcatalog;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ListView;
+
 import greendroid.app.GDListActivity;
 import greendroid.graphics.drawable.ActionBarDrawable;
 import greendroid.widget.ActionBarItem;
 import greendroid.widget.ItemAdapter;
 import greendroid.widget.NormalActionBarItem;
 import greendroid.widget.item.TextItem;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.ListView;
 
 public class CatalogActivity extends GDListActivity {
 
@@ -41,12 +42,12 @@ public class CatalogActivity extends GDListActivity {
         adapter.add(createTextItem(R.string.quick_action_label, QuickActionActivity.class));
         adapter.add(createTextItem(R.string.simple_async_image_view_label, SimpleAsyncImageViewActivity.class));
         adapter.add(createTextItem(R.string.async_image_view_list_view_label, AsyncImageViewListActivity.class));
-        adapter.add(createTextItem(R.string.map_pin_drawable_label, MapPinMapActivity.class));
+        //adapter.add(createTextItem(R.string.map_pin_drawable_label, MapPinMapActivity.class));
         adapter.add(createTextItem(R.string.paged_view_label, PagedViewActivity.class));
 
         setListAdapter(adapter);
 
-        addActionBarItem(getActionBar()
+        addActionBarItem(getGDActionBar()
                 .newActionBarItem(NormalActionBarItem.class)
                 .setDrawable(new ActionBarDrawable(this, R.drawable.ic_action_bar_info)), R.id.action_bar_view_info);
     }

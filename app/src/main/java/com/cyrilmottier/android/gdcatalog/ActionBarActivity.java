@@ -15,18 +15,20 @@
  */
 package com.cyrilmottier.android.gdcatalog;
 
-import greendroid.app.GDActivity;
-import greendroid.widget.ActionBarItem;
-import greendroid.widget.LoaderActionBarItem;
-import greendroid.widget.ActionBarItem.Type;
-import greendroid.widget.NormalActionBarItem;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class ActionBarActivity extends GDActivity {
+import com.quseit.common.QBaseActivity;
+
+import greendroid.widget.ActionBarItem;
+import greendroid.widget.ActionBarItem.Type;
+import greendroid.widget.LoaderActionBarItem;
+import greendroid.widget.NormalActionBarItem;
+
+public class ActionBarActivity extends QBaseActivity {
 
     private final Handler mHandler = new Handler();
 
@@ -38,11 +40,21 @@ public class ActionBarActivity extends GDActivity {
         ((TextView) findViewById(R.id.text)).setText(R.string.first_screen);
 
         addActionBarItem(Type.Refresh, R.id.action_bar_refresh);
-        addActionBarItem(getActionBar()
+        addActionBarItem(getGDActionBar()
                 .newActionBarItem(NormalActionBarItem.class)
                 .setDrawable(R.drawable.ic_title_export)
                 .setContentDescription(R.string.gd_export), R.id.action_bar_export);
         addActionBarItem(Type.Locate, R.id.action_bar_locate);
+    }
+
+    @Override
+    public Class<?> getUpdateSrv() {
+        return null;
+    }
+
+    @Override
+    public String confGetUpdateURL(int flag) {
+        return null;
     }
 
     @Override

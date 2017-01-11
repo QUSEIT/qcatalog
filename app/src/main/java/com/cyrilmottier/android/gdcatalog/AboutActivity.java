@@ -15,12 +15,13 @@
  */
 package com.cyrilmottier.android.gdcatalog;
 
-import greendroid.app.GDActivity;
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
 import android.widget.TextView;
 
-public class AboutActivity extends GDActivity {
+import com.quseit.common.QBaseActivity;
+
+public class AboutActivity extends QBaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,5 +32,15 @@ public class AboutActivity extends GDActivity {
         final TextView aboutText = (TextView) findViewById(R.id.about);
         aboutText.setMovementMethod(LinkMovementMethod.getInstance());
     }
-    
+
+    @Override
+    public Class<?> getUpdateSrv() {
+        return null;
+    }
+
+    @Override
+    public String confGetUpdateURL(int flag) {
+        return null;
+    }
+
 }
