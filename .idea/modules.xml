@@ -4,10 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/QCatalog.iml" filepath="$PROJECT_DIR$/QCatalog.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/backup/mbasepagerlib/mbasepagerlib.iml" filepath="$PROJECT_DIR$/backup/mbasepagerlib/mbasepagerlib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/backup/mftplib/mftplib.iml" filepath="$PROJECT_DIR$/backup/mftplib/mftplib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/backup/muilib/muilib.iml" filepath="$PROJECT_DIR$/backup/muilib/muilib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/backup/qbaselib/qbaselib.iml" filepath="$PROJECT_DIR$/backup/qbaselib/qbaselib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mbasepagerlib/mbasepagerlib.iml" filepath="$PROJECT_DIR$/mbasepagerlib/mbasepagerlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mftplib/mftplib.iml" filepath="$PROJECT_DIR$/mftplib/mftplib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/muilib/muilib.iml" filepath="$PROJECT_DIR$/muilib/muilib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qbaselib/qbaselib.iml" filepath="$PROJECT_DIR$/qbaselib/qbaselib.iml" />
     </modules>
   </component>
 </project>

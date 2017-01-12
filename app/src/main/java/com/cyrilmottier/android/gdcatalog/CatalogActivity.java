@@ -77,4 +77,9 @@ public class CatalogActivity extends GDListActivity {
                 return super.onHandleActionBarItemClick(item, position);
         }
     }
+/*
+    public int createLayout() {
+        return R.layout.gd_content_dashboard;
+    }
+    */
 }

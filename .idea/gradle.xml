@@ -9,10 +9,10 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/backup/mbasepagerlib" />
-            <option value="$PROJECT_DIR$/backup/mftplib" />
-            <option value="$PROJECT_DIR$/backup/muilib" />
-            <option value="$PROJECT_DIR$/backup/qbaselib" />
+            <option value="$PROJECT_DIR$/mbasepagerlib" />
+            <option value="$PROJECT_DIR$/mftplib" />
+            <option value="$PROJECT_DIR$/muilib" />
+            <option value="$PROJECT_DIR$/qbaselib" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
